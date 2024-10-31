@@ -32,6 +32,3 @@ ipython kernel install --user --name=diffusion_models
 ## License
 This project is licensed under the terms of the [LICENSE] file located in the root directory of this repository.
 
-
-## Contact Information
-For more information or help with navigating this repository, please contact Vector AI ENG Team at sana.ayromlou@vectorinstitute.ai .
