@@ -1,0 +1,32 @@
+{
+    "name": "trans",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "trans_date",
+        "trans_type",
+        "operation",
+        "amount",
+        "balance",
+        "k_symbol",
+        "bank",
+        "account"
+    ],
+    "num_col_idx": [
+        0,
+        4,
+        7
+    ],
+    "cat_col_idx": [
+        1,
+        2,
+        5,
+        6
+    ],
+    "target_col_idx": [
+        3
+    ],
+    "file_type": "csv",
+    "data_path": "/projects/aieng/midst_competition/data/tabsyn/tabsyn_1/raw_data/train.csv",
+    "test_path": "/projects/aieng/midst_competition/data/tabsyn/tabsyn_1/raw_data/test.csv"
+}

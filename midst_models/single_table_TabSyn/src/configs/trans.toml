@@ -1,0 +1,42 @@
+task_type = "regression"
+
+[model_params]
+n_head = 1
+factor = 32
+num_layers = 2
+d_token = 4
+
+[transforms]
+normalization = "quantile"
+num_nan_policy = "mean"
+cat_nan_policy = "__none__"
+cat_min_frequency = "__none__"
+cat_encoding = "__none__"
+y_policy = "default"
+
+[train.vae]
+num_epochs = 4000
+batch_size = 4096
+num_dataset_workers = 4
+
+[train.diffusion]
+num_epochs = 10001
+batch_size = 4096
+num_dataset_workers = 4
+
+[train.optim.vae]
+lr = 1e-3
+weight_decay = 0
+factor = 0.95
+patience = 10
+
+[train.optim.diffusion]
+lr = 1e-3
+weight_decay = 0
+factor = 0.9
+patience = 20
+
+[loss_params]
+max_beta = 1e-2
+min_beta = 1e-5
+lambd = 0.7
