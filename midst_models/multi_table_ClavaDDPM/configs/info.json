@@ -1,0 +1,112 @@
+{
+    "name": "trans",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "trans_date",
+        "trans_type",
+        "operation",
+        "amount",
+        "balance",
+        "k_symbol",
+        "bank",
+        "account"
+    ],
+    "num_col_idx": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+    ],
+    "cat_col_idx": [],
+    "target_col_idx": [
+        3
+    ],
+    "file_type": "csv",
+    "data_path": "/projects/aieng/midst_competition/data/tabddpm/clavaddpm_1/trans_no_id.csv",
+    "test_path": null,
+    "column_info": {
+        "0": {},
+        "type": "numerical",
+        "max": 99994199.0,
+        "min": 0.0,
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {}
+    },
+    "train_num": 20000,
+    "test_num": 10000,
+    "idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7
+    },
+    "inverse_idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7
+    },
+    "idx_name_mapping": {
+        "0": "trans_date",
+        "1": "trans_type",
+        "2": "operation",
+        "3": "amount",
+        "4": "balance",
+        "5": "k_symbol",
+        "6": "bank",
+        "7": "account"
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Integer"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Integer"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "5": {
+                "sdtype": "numerical",
+                "computer_representation": "Integer"
+            },
+            "6": {
+                "sdtype": "numerical",
+                "computer_representation": "Integer"
+            },
+            "7": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            }
+        }
+    }
+}
