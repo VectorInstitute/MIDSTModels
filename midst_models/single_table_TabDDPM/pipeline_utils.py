@@ -367,7 +367,7 @@ def load_multi_table(data_dir, verbose=True):
         else:
             train_df = pd.read_csv(os.path.join(data_dir, f"{table}.csv"))
         tables[table] = {
-            "df": df,
+            "df": train_df,
             "domain": json.load(open(os.path.join(data_dir, f"{table}_domain.json"))),
             "children": meta["children"],
             "parents": meta["parents"],
