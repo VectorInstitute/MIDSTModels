@@ -21,11 +21,11 @@ To get started with this repository, follow these steps:
 pip install --upgrade pip poetry
 poetry env use [name of your python] #python3.9
 source $(poetry env info --path)/bin/activate
-poetry install --with "synthcity, tabsyn, clavaddpm, csdi, tsdiff"
+poetry install --with "tabsyn, clavaddpm"
 # If your system is not compatible with pykeops, you can uninstall it using the following command
 pip uninstall pykeops
 # Install the kernel for jupyter (only need to do it once)
-ipython kernel install --user --name=diffusion_models
+ipython kernel install --user --name=midst_models
 ```
 3. Begin with each model in the `midst_models/` directory, as guided by the README files.
 
