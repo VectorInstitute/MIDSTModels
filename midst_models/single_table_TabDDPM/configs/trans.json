@@ -1,10 +1,10 @@
 {
     "general": {
-        "data_dir": "/projects/aieng/midst_competition/data/tabddpm_new/tabddpm_1",
+        "data_dir": "/projects/aieng/midst_competition/data/tabddpm/tabddpm_1",
         "exp_name": "tabddpm_1",
-        "workspace_dir": "/projects/aieng/midst_competition/data/tabddpm_new/tabddpm_1/workspace",
+        "workspace_dir": "/projects/aieng/midst_competition/data/tabddpm/tabddpm_1/workspace",
         "sample_prefix": "",
-        "test_data_dir": "/projects/aieng/midst_competition/data/tabddpm_new/tabddpm_1"
+        "test_data_dir": "/projects/aieng/midst_competition/data/tabddpm/tabddpm_1"
     },
     "clustering": {
         "parent_scale": 1.0,

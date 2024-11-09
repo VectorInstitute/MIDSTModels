@@ -1,0 +1,1 @@
+{"trans_date": {"size": 2191, "type": "continuous"}, "trans_type": {"size": 3, "type": "discrete"}, "operation": {"size": 6, "type": "discrete"}, "amount": {"size": 40400, "type": "continuous"}, "balance": {"size": 542739, "type": "continuous"}, "k_symbol": {"size": 9, "type": "discrete"}, "bank": {"size": 14, "type": "discrete"}, "account": {"size": 7665, "type": "continuous"}}

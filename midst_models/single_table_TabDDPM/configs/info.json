@@ -26,7 +26,7 @@
         3
     ],
     "file_type": "csv",
-    "data_path": "/projects/aieng/midst_competition/data/tabddpm_new/tabddpm_1/train.csv",
+    "data_path": "/projects/aieng/midst_competition/data/tabddpm/tabddpm_1/train.csv",
     "test_path": null,
     "column_info": {
         "0": {},
