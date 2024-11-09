@@ -1,0 +1,259 @@
+{
+    "name": "district",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16"
+    ],
+    "num_col_idx": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+    ],
+    "cat_col_idx": [
+        0,
+        1
+    ],
+    "target_col_idx": [
+        2
+    ],
+    "file_type": "csv",
+    "data_path": "/fs01/projects/aieng/midst_competition/data/clavaddpm/clavaddpm_1/eval_files/district_no_id.csv",
+    "test_path": null,
+    "column_info": {
+        "0": {},
+        "categorizes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+        ],
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {},
+        "9": {},
+        "10": {},
+        "11": {},
+        "12": {},
+        "13": {},
+        "14": {},
+        "max": 999999.0,
+        "min": 0.0
+    },
+    "train_num": 77,
+    "test_num": 0,
+    "idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14
+    },
+    "inverse_idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14
+    },
+    "idx_name_mapping": {
+        "0": "A2",
+        "1": "A3",
+        "2": "A4",
+        "3": "A5",
+        "4": "A6",
+        "5": "A7",
+        "6": "A8",
+        "7": "A9",
+        "8": "A10",
+        "9": "A11",
+        "10": "A12",
+        "11": "A13",
+        "12": "A14",
+        "13": "A15",
+        "14": "A16"
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "categorical"
+            },
+            "1": {
+                "sdtype": "categorical"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "5": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "6": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "7": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "8": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "9": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "10": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "11": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "12": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "13": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "14": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            }
+        }
+    }
+}

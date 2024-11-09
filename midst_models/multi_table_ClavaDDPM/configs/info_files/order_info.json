@@ -1,0 +1,85 @@
+{
+    "name": "order",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "bank_to",
+        "account_to",
+        "amount",
+        "k_symbol"
+    ],
+    "num_col_idx": [
+        1
+    ],
+    "cat_col_idx": [
+        0,
+        3
+    ],
+    "target_col_idx": [
+        2
+    ],
+    "file_type": "csv",
+    "data_path": "/fs01/projects/aieng/midst_competition/data/clavaddpm/clavaddpm_1/eval_files/order_no_id.csv",
+    "test_path": null,
+    "column_info": {
+        "0": {},
+        "categorizes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+        ],
+        "1": {},
+        "2": {},
+        "max": 999999.0,
+        "min": 0.0,
+        "3": {}
+    },
+    "train_num": 6180,
+    "test_num": 0,
+    "idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3
+    },
+    "inverse_idx_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3
+    },
+    "idx_name_mapping": {
+        "0": "bank_to",
+        "1": "account_to",
+        "2": "amount",
+        "3": "k_symbol"
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "categorical"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "categorical"
+            }
+        }
+    }
+}

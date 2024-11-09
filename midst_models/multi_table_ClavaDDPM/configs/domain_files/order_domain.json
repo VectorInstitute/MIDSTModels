@@ -1,0 +1,1 @@
+{"bank_to": {"size": 13, "type": "discrete"}, "account_to": {"size": 6446, "type": "continuous"}, "amount": {"size": 4412, "type": "continuous"}, "k_symbol": {"size": 5, "type": "discrete"}}

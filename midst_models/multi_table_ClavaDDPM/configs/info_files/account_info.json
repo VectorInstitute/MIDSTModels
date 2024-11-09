@@ -1,0 +1,56 @@
+{
+    "name": "account",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "frequency",
+        "account_date"
+    ],
+    "num_col_idx": [],
+    "cat_col_idx": [
+        0
+    ],
+    "target_col_idx": [
+        1
+    ],
+    "file_type": "csv",
+    "data_path": "/fs01/projects/aieng/midst_competition/data/clavaddpm/clavaddpm_1/eval_files/account_no_id.csv",
+    "test_path": null,
+    "column_info": {
+        "0": {},
+        "categorizes": [
+            0,
+            1,
+            2
+        ],
+        "1": {},
+        "type": "numerical",
+        "max": 100000.0,
+        "min": 0.0
+    },
+    "train_num": 4219,
+    "test_num": 0,
+    "idx_mapping": {
+        "0": 0,
+        "1": 1
+    },
+    "inverse_idx_mapping": {
+        "0": 0,
+        "1": 1
+    },
+    "idx_name_mapping": {
+        "0": "frequency",
+        "1": "account_date"
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "categorical"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            }
+        }
+    }
+}

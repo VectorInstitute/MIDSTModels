@@ -1,0 +1,1 @@
+{"year": {"size": 77, "type": "discrete"}, "month": {"size": 12, "type": "discrete"}, "client_date": {"size": 31, "type": "discrete"}, "gender": {"size": 2, "type": "discrete"}}

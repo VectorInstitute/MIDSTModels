@@ -1,0 +1,1 @@
+{"loan_date": {"size": 559, "type": "continuous"}, "amount": {"size": 645, "type": "continuous"}, "duration": {"size": 5, "type": "continuous"}, "payments": {"size": 577, "type": "continuous"}, "status": {"size": 4, "type": "discrete"}}
