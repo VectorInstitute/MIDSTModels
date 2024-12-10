@@ -89,6 +89,12 @@ def clava_training(tables, relation_order, save_dir, configs):
 
     return models
 
+class CustomUnpickler(pickle.Unpickler):
+    def find_class(self, module, name):
+        if module.startswith("midst_competition.single_table_ClavaDDPM"):
+            module = module.replace("midst_competition.single_table_ClavaDDPM",
+                                    "midst_models.single_table_TabDDPM", 1)
+        return super().find_class(module, name)
 
 def clava_load_pretrained(relation_order, save_dir):
     models = {}
@@ -97,10 +103,9 @@ def clava_load_pretrained(relation_order, save_dir):
             os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl")
         )
         print(f"{parent} -> {child} checkpoint found, loading...")
-        models[(parent, child)] = pickle.load(
-            open(os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl"), "rb")
-        )
-
+        with open(os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl"), "rb") as f:
+            models[(parent, child)] = CustomUnpickler(f).load()
+       
     return models
 
 

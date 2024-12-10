@@ -90,6 +90,19 @@ def clava_training(tables, relation_order, save_dir, configs):
     return models
 
 
+class CustomUnpickler(pickle.Unpickler):
+    def find_class(self, module, name):
+        print(module)
+        print(name)
+        print("#" * 100)
+        if module.startswith("midst_competition.multi_table_ClavaDDPM"):
+            module = module.replace("midst_competition.multi_table_ClavaDDPM",
+                                    "midst_models.multi_table_ClavaDDPM", 1)
+        elif module.startswith("midst_competition.single_table_ClavaDDPM"):
+            module = module.replace("midst_competition.single_table_ClavaDDPM",
+                                    "midst_models.single_table_TabDDPM", 1)
+        return super().find_class(module, name)
+
 def clava_load_pretrained(relation_order, save_dir):
     models = {}
     for parent, child in relation_order:
@@ -97,10 +110,9 @@ def clava_load_pretrained(relation_order, save_dir):
             os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl")
         )
         print(f"{parent} -> {child} checkpoint found, loading...")
-        models[(parent, child)] = pickle.load(
-            open(os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl"), "rb")
-        )
-
+        with open(os.path.join(save_dir, f"models/{parent}_{child}_ckpt.pkl"), "rb") as f:
+            models[(parent, child)] = CustomUnpickler(f).load()
+       
     return models
 
 
@@ -291,6 +303,26 @@ def clava_load_synthesized_data(table_keys, table_dir):
     for key in table_keys:
         synthetic_tables[key] = pd.read_csv(
             os.path.join(table_dir, key, "_final", f"{key}_synthetic.csv")
+        )
+    print("Synethic tables loaded!")
+    return synthetic_tables
+
+def clava_load_synthesized_data_updated(table_keys, table_dir):
+    all_exist = True
+    for key in table_keys:
+        if not os.path.exists(
+            os.path.join(table_dir, key, "_final", f"{key}_synthetic_updated.csv")
+        ):
+            all_exist = False
+            break
+    assert (
+        all_exist
+    ), "Cannot load pre-synthesized data! Please run sampling from scratch."
+    print("Synthetic tables found, loading...")
+    synthetic_tables = {}
+    for key in table_keys:
+        synthetic_tables[key] = pd.read_csv(
+            os.path.join(table_dir, key, "_final", f"{key}_synthetic_updated.csv")
         )
     print("Synethic tables loaded!")
     return synthetic_tables
