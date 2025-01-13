@@ -778,3 +778,13 @@ def load_dataset_info(dataset_dir_name: str) -> Dict[str, Any]:
     info["n_features"] = info["n_num_features"] + info["n_cat_features"]
     info["path"] = path
     return info
+
+def round_columns_uniq_vals(uniq_vals_list, X_synth, columns):
+    for col in columns:
+        uniq = uniq_vals_list[col]
+        dist = cdist(
+            X_synth[:, col][:, np.newaxis].astype(float),
+            uniq[:, np.newaxis].astype(float),
+        )
+        X_synth[:, col] = uniq[dist.argmin(axis=1)]
+    return X_synth
