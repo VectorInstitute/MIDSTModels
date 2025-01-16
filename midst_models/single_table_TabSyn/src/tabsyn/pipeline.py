@@ -1,4 +1,5 @@
 import os
+import pickle
 import time
 
 import numpy as np
@@ -286,6 +287,22 @@ class TabSyn:
         train_z = train_z.view(B, in_dim)
 
         return train_z, token_dim
+    
+    def save_embeddings_attributes(self, vae_ckpt_dir):
+        train_z, token_dim = self.load_latent_embeddings(vae_ckpt_dir)
+        embedding_att = {
+            'token_dim': token_dim,
+            'in_dim': train_z.shape[1],
+            'hid_dim': train_z.shape[1],
+            'num_samples': train_z.shape[0],
+            'mean_input_emb': train_z.mean(0),
+            'std_input_emb': train_z.std(0)
+        }
+        pickle.dump(embedding_att, open(os.path.join(vae_ckpt_dir, "train_z_attributes.pkl"), "wb"))
+        
+    def load_embeddings_attributes(self, vae_ckpt_dir):
+        embedding_att = pickle.load(open(os.path.join(vae_ckpt_dir, "train_z_attributes.pkl"), "rb"))
+        return embedding_att
 
     def train_diffusion(self, train_loader, num_epochs, ckpt_path):
         self.dif_model.train()
