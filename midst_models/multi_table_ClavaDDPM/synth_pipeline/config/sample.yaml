@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+
+data_dir: /projects/aieng/midst_competition/data/clavaddpm/clavaddpm_1
+data_name: "trans"
+exp_name: "train_1"

@@ -1,0 +1,9 @@
+main_data_dir: /projects/aieng/midst_competition/data/berka/tabddpm  # Path to the main data directory where the whole dataset is stored along with config templates
+save_data_dir: /projects/aieng/midst_competition/data/tabddpm_round3 # Path to the save data directory where the subsets will be saved
+data_name: trans # Name of the dataset
+files_to_copy: ['dataset_meta.json', 'trans_domain.json', 'trans_earliest_date.txt', 'trans_label_encoders.pkl']
+
+num_subsets: 40 #70            # Number of subsets to create
+subset_size: 20000         # Number of rows in each subset
+test_size: 10000           # Number of rows in the test set
+challenge_size: 200        # Number of rows in the challenge set

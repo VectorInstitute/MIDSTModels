@@ -1,0 +1,13 @@
+defaults:
+  - _self_
+
+data_dir: /projects/aieng/midst_competition/data/tabddpm/tabddpm_1
+main_data_path: /projects/aieng/midst_competition/data/tabddpm/trans.csv
+data_name: "trans"
+exp_name: "train_1"
+eval_flags:
+  eval_density: True
+  eval_quality: True
+  eval_dcr: True
+  eval_detection: True
+  eval_mle: True

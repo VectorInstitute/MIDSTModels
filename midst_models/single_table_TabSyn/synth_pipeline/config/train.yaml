@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+
+main_data_path: "/projects/aieng/midst_competition/data/tabsyn/all_data/processed_data/trans/" # Path to the main data that have all the categories
+data_dir: /projects/aieng/midst_competition/data/tabsyn_round3/tabsyn_1 # Path to the directory where the data will be saved
+data_name: "trans" # Name of the data
+exp_name: "train_1" # Name of the experiment run

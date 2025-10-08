@@ -1,0 +1,10 @@
+main_data_dir: /projects/aieng/midst_competition/data/berka/clavaddpm  # Path to the main data directory where the whole dataset is stored along with config templates
+save_data_dir: /projects/aieng/midst_competition/data/clavaddpm_wb # Path to the save data directory where the subsets will be saved
+info_dir: /projects/aieng/midst_competition/data/clavaddpm/clavaddpm_1/eval_files # Path to the info directory where the info.json file is stored
+data_name: trans # Name of the dataset
+files_to_exclude: ['info.json', 'info_regression.json', 'trans.json']
+
+num_subsets: 20            # Number of subsets to create
+subset_size: 20000         # Number of rows in each subset
+test_size: 10000           # Number of rows in the test set
+challenge_size: 200        # Number of rows in the challenge set

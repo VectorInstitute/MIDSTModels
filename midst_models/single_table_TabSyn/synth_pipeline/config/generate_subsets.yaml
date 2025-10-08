@@ -1,0 +1,10 @@
+main_data_dir: /projects/aieng/midst_competition/data/berka/tabsyn  # Path to the main data directory where the whole dataset is stored along with config templates
+save_data_dir: /projects/aieng/midst_competition/data/tabsyn_round3 # Path to the save data directory where the subsets will be saved
+main_info_file: /projects/aieng/midst_competition/data/tabsyn/all_data/processed_data/trans/info.json
+data_name: trans # Name of the dataset
+files_to_copy: ['trans.toml']
+
+num_subsets: 40            # Number of subsets to create
+subset_size: 20000         # Number of rows in each subset
+test_size: 10000           # Number of rows in the test set
+challenge_size: 200        # Number of rows in the challenge set
